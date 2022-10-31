@@ -1,5 +1,6 @@
 import Head from "next/head";
 import Navbar from "../components/navbar";
+import Projects from "../components/projects";
 
 const Home = () => {
   return (
@@ -10,17 +11,21 @@ const Home = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main className="min-h-screen bg-black text-gray-300">
+      <main className="min-h-screen bg-gray-100 dark:bg-black dark:text-gray-300">
         <Navbar />
-        <header className="text-center mb-10">
-          <h1 className="text-2xl">
+        <header className="text-center p-6">
+          <h1 className="text-xl">
             Hi, I&apos;m{" "}
-            <span className="text-royal-blue animate-typewriter font-source-code overflow-hidden">
+            <p className="text-3xl text-blue-700 dark:text-royal-blue font-source-code">
               Adeoti Shuaib
-            </span>
+            </p>
           </h1>
-          <p>Frontend Developer</p>
+          <p className="text-sm mt-3">
+            A detail-oriented frontend web developer providing web solutions
+            that are accessible, maintainable, and scalable.
+          </p>
         </header>
+        <Projects />
       </main>
     </>
   );

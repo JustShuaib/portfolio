@@ -5,11 +5,15 @@ module.exports = {
     "./components/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
+    fontFamily: {
+      sans: ["Mukta", "sans-serif"],
+    },
     extend: {
       colors: {
         "royal-blue": "#0070f3",
         "light-grey": "#eaeaea",
         "off-white": "#fafafa",
+        "box-bg": "#1b1b1d",
       },
       fontFamily: {
         "source-code": "'Source Code Pro', monospace",
