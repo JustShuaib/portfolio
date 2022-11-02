@@ -1,38 +1,53 @@
+import Demo from "./demo";
+import ExtLink from "./extLink";
+import Github from "./github";
 const Projects = () => {
   return (
     <section>
-      <h2 className="text-xl text-center">
-        Projects <span className="text-royal-blue">.</span>
+      <h2 className="text-center text-xl md:text-2xl">
+        Projects<span className="text-royal-blue">.</span>
       </h2>
-      <div className="grid my-6 px-6 gap-6 md:grid-cols-3">
-        <section className="flex p-8 flex-col backdrop-blur-sm border border-royal-blue transition-all duration-300 md:hover:scale-110">
-          <h3 className="text-lg font-semibold text-white">Fitfest</h3>
-          <p className="mb-3 mt-1 text-xs font-semibold leading-5 tracking-wider text-light-grey">
-            HTML + CSS + JAVASCRIPT + AJAX + DJANGO + PAYSTACK PAYMENT GATEWAY +
-            POSTGRESQL + AWS
-          </p>
-          <p className="my-3 min-h-[5rem] text-xs font-semibold tracking-wider text-dark-grey md:h-10">
+      <div className="my-6 grid gap-6 px-6 md:grid-cols-3">
+        <section className="flex flex-col border border-royal-blue p-6 md:transition-all md:duration-300 md:hover:scale-110">
+          <h3 className="text-center text-lg font-semibold dark:text-gray-100">
+            Fitfest
+          </h3>
+          <p className="text-sm tracking-wider">
             A project showing a variety of exercises with illustrations,
             exercises videos on Youtube, and similar exercises
           </p>
+          <ul className="my-3 flex flex-wrap items-center gap-3 text-xs font-semibold leading-4 tracking-wide">
+            {["React.js", "MUI", "Vite", "Swiper"].map((tech, i) => (
+              <li
+                key={i}
+                // className="rounded border border-royal-blue px-3 py-1.5"
+              >
+                {tech}
+              </li>
+            ))}
+          </ul>
           <div className="flex items-center gap-x-4">
             <a
-              href="https://summit.up.railway.app"
+              href="https://fitfest.vercel.app"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center justify-start gap-x-1 text-xs text-light-grey hover:text-white"
+              className="flex items-center gap-x-1 rounded-sm border border-transparent bg-gray-200 px-3 py-2 text-xs transition hover:border hover:border-royal-blue dark:bg-box-bg dark:text-light-grey"
+              // className="inline-flex items-center justify-start gap-x-1 text-xs dark:text-light-grey hover:text-white"
             >
               {/* <FaEye /> */}
-              <span>Live</span>
+              <span>Live Demo</span>
+              {/* <Demo /> */}
+              <ExtLink />
             </a>
             <a
-              href="https://github.com/Goddy01/E-commerce"
+              href="https://github.com/JustShuaib/fitfest"
               target="_blank"
               rel="noopener noreferrer"
-              className="flex items-center gap-x-1 text-xs text-light-grey hover:text-white"
+              className="flex items-center gap-x-1 rounded-sm border border-transparent bg-gray-200 px-3 py-2 text-xs transition hover:border-royal-blue dark:bg-box-bg dark:text-light-grey"
+              // className="flex items-center gap-x-1 text-xs hover:text-white dark:text-light-grey"
             >
-              {/* <FaCodeBranch /> */}
-              <span>Code</span>
+              <span>Source Code</span>
+              <Github />
             </a>
           </div>
         </section>

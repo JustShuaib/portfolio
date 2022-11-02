@@ -52,7 +52,7 @@ const Navbar = () => {
         }`}
       >
         <div
-          className={`fixed right-0 min-h-screen w-4/5 flex-col items-center justify-center gap-x-6 bg-gray-100 dark:bg-black text-lg md:static md:flex md:min-h-0 md:w-auto md:flex-row md:text-sm ${
+          className={`fixed right-0 min-h-screen w-4/5 flex-col items-center justify-center gap-x-6 bg-gray-50 dark:bg-black text-lg md:static md:flex md:min-h-0 md:w-auto md:flex-row md:text-sm ${
             navOpen ? "flex" : "hidden"
           }`}
         >
