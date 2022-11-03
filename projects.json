@@ -1,0 +1,20 @@
+{
+  "projects": [
+    {
+      "id": "1",
+      "name": "Fitfest",
+      "about": "A project showing a variety of exercises with illustrations, exercises videos on Youtube, and similar exercises",
+      "stack": ["React.js", "MUI", "Vite", "Swiper"],
+      "demo": "https://fitfest.vercel.app",
+      "code": "https://github.com/JustShuaib/fitfest"
+    },
+    {
+      "id": "2",
+      "name": "Portfolio",
+      "about": "This website. A project showcasing my details, projects I've worked on, and my skills",
+      "stack": ["Next.js", "TypeScript", "Tailwind"],
+      "demo": "https://fitfest.vercel.app",
+      "code": "https://github.com/JustShuaib/portfolio"
+    }
+  ]
+}

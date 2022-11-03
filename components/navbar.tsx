@@ -27,32 +27,32 @@ const Navbar = () => {
   }, [navOpen]);
   return (
     <nav className="flex items-center justify-between px-6 py-7 md:px-14">
-      <div className="flex md:hidden basis-full justify-end">
+      <div className="flex basis-full justify-end md:hidden">
         <button
           type="button"
           onClick={() => setNavOpen((open) => !open)}
           aria-label="toggle side navigation menu"
-          className="flex flex-col items-end z-20 transition-all duration-700 ease-in-out"
+          className="relative top-5 z-20 flex flex-col items-end transition-all duration-700 ease-in-out"
         >
           <span
-            className={`my-1 h-px bg-black dark:bg-white transition-all duration-200 ease-linear ${
+            className={`my-1 h-px bg-black transition-all duration-200 ease-linear dark:bg-white ${
               navOpen ? "w-8 rotate-45" : "w-9"
             }`}
           ></span>
           <span
-            className={`my-1 h-px bg-black dark:bg-white transition-all duration-200 ease-linear ${
+            className={`my-1 h-px bg-black transition-all duration-200 ease-linear dark:bg-white ${
               navOpen ? "relative -top-2 w-8 -rotate-45" : "w-6"
             }`}
           ></span>
         </button>
       </div>
       <div
-        className={`fixed transition-all duration-500 left-0 backdrop-blur-sm top-0 z-10 min-h-screen w-full bg-gray-300 dark:bg-black dark:bg-opacity-10 bg-opacity-20 md:static md:min-h-0 md:w-auto md:translate-x-0 md:visible ${
-          navOpen ? "translate-x-0 visible" : "translate-x-96 invisible"
+        className={`fixed left-0 top-0 z-10 min-h-screen w-full bg-gray-300 bg-opacity-20 backdrop-blur-sm transition-all duration-500 dark:bg-black dark:bg-opacity-10 md:visible md:static md:min-h-0 md:w-auto md:translate-x-0 ${
+          navOpen ? "visible translate-x-0" : "invisible translate-x-96"
         }`}
       >
         <div
-          className={`fixed right-0 min-h-screen w-4/5 flex-col items-center justify-center gap-x-6 bg-gray-50 dark:bg-black text-lg md:static md:flex md:min-h-0 md:w-auto md:flex-row md:text-sm ${
+          className={`fixed right-0 min-h-screen w-4/5 flex-col items-center justify-center gap-x-6 bg-gray-50 text-lg dark:bg-black md:static md:flex md:min-h-0 md:w-auto md:flex-row md:text-sm ${
             navOpen ? "flex" : "hidden"
           }`}
         >
@@ -60,10 +60,8 @@ const Navbar = () => {
             {routes.map(({ to, text }, i) => (
               <li key={i}>
                 <Link
+                  className="md:transition md:duration-500 md:hover:text-royal-blue"
                   href={to}
-                  // className={({ isActive }) =>
-                  //   isActive ? "text-royal-blue" : ""
-                  // }
                 >
                   {text}
                 </Link>
