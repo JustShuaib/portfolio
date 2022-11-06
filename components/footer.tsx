@@ -50,7 +50,7 @@ const Footer = () => {
           </a>
         </li>
       </ul>
-      <p className="mt-8 text-center">
+      <p className="mt-8 text-center text-xs">
         &copy; {new Date().getFullYear()} Designed and Developed by JustShuaib
       </p>
     </footer>

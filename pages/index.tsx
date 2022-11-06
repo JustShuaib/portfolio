@@ -30,8 +30,8 @@ const Home = ({ projects }: { projects: projectTypes[] }) => {
         }
       >
         <Navbar />
-        <main>
-          <header className="p-6 text-center">
+        <main className="p-6">
+          <header className="text-center">
             <h1 className="text-xl">
               Hi, I&apos;m{" "}
               <p

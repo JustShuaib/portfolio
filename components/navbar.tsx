@@ -56,7 +56,7 @@ const Navbar = () => {
             navOpen ? "flex" : "hidden"
           }`}
         >
-          <ul className="flex flex-col items-center gap-y-8 gap-x-6 md:flex-row">
+          <ul className="flex flex-col items-center gap-y-8 gap-x-6 md:flex-row md:text-base">
             {routes.map(({ to, text }, i) => (
               <li key={i}>
                 <Link
