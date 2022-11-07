@@ -34,11 +34,11 @@ const Home = ({ projects }: { projects: projectTypes[] }) => {
           <header className="text-center">
             <h1 className="text-xl">
               Hi, I&apos;m{" "}
-              <p
-                className={`text-3xl text-blue-700 dark:text-royal-blue ${sourceCodePro.className}`}
+              <span
+                className={`block text-3xl text-blue-700 dark:text-royal-blue ${sourceCodePro.className}`}
               >
                 Adeoti Shuaib
-              </p>
+              </span>
             </h1>
             <p className="mt-3 text-sm md:text-base">
               A detail-oriented frontend web developer providing web solutions
@@ -46,6 +46,11 @@ const Home = ({ projects }: { projects: projectTypes[] }) => {
             </p>
           </header>
           <Projects projects={projects} />
+          <section>
+            <h2 className="text-center text-xl md:text-2xl">
+              Technologies<span className="text-royal-blue">?</span>
+            </h2>
+          </section>
           <Contact />
         </main>
         <Footer />

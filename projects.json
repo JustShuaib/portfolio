@@ -15,6 +15,14 @@
       "stack": ["Next.js", "TypeScript", "Tailwind"],
       "demo": "https://fitfest.vercel.app",
       "code": "https://github.com/JustShuaib/portfolio"
+    },
+    {
+      "id": "3",
+      "name": "countries-app",
+      "about": "This website. A project showcasing my details, projects I've worked on, and my skills",
+      "stack": ["React.js", "Tailwind"],
+      "demo": "https://fitfest.vercel.app",
+      "code": "https://github.com/JustShuaib/portfolio"
     }
   ]
 }
