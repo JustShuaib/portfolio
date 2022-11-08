@@ -19,7 +19,7 @@
     {
       "id": "3",
       "name": "countries-app",
-      "about": "This website. A project showcasing my details, projects I've worked on, and my skills",
+      "about": "A website that displays the list of all the countries in the world, and the details of each country.",
       "stack": ["React.js", "Tailwind"],
       "demo": "https://fitfest.vercel.app",
       "code": "https://github.com/JustShuaib/portfolio"

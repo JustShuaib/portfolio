@@ -8,7 +8,7 @@ const Projects = ({ projects }: { projects: projectTypes[] }) => {
       <h2 className="text-center text-xl md:text-2xl">
         Projects<span className="text-royal-blue">.</span>
       </h2>
-      <ul className="my-6 grid gap-8 md:grid-cols-3">
+      <ul className="my-6 grid gap-8 md:grid-cols-2 lg:grid-cols-3">
         {projects.map(({ id, name, about, stack, demo, code }) => (
           <li
             key={id}

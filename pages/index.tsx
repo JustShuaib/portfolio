@@ -30,21 +30,21 @@ const Home = ({ projects }: { projects: projectTypes[] }) => {
         }
       >
         <Navbar />
-        <main className="p-6">
-          <header className="text-center">
-            <h1 className="text-xl">
-              Hi, I&apos;m{" "}
-              <span
-                className={`block text-3xl text-blue-700 dark:text-royal-blue ${sourceCodePro.className}`}
-              >
-                Adeoti Shuaib
-              </span>
-            </h1>
-            <p className="mt-3 text-sm md:text-base">
-              A detail-oriented frontend web developer providing web solutions
-              that are accessible, maintainable, and scalable.
-            </p>
-          </header>
+        <header className="p-6 pb-0 text-center">
+          <h1 className="text-xl">
+            Hi, I&apos;m{" "}
+            <span
+              className={`block text-3xl text-blue-700 dark:text-royal-blue ${sourceCodePro.className}`}
+            >
+              Adeoti Shuaib
+            </span>
+          </h1>
+          <p className="mt-3 text-sm md:text-base">
+            A detail-oriented frontend web developer providing web solutions
+            that are accessible, maintainable, and scalable.
+          </p>
+        </header>
+        <main className="px-6">
           <Projects projects={projects} />
           <section>
             <h2 className="text-center text-xl md:text-2xl">

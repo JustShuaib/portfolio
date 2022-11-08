@@ -35,12 +35,12 @@ const Navbar = () => {
           className="relative top-5 z-20 flex flex-col items-end transition-all duration-700 ease-in-out"
         >
           <span
-            className={`my-1 h-px bg-black transition-all duration-200 ease-linear dark:bg-white ${
+            className={`my-1 h-px bg-black transition-all duration-300 ease-linear dark:bg-white ${
               navOpen ? "w-8 rotate-45" : "w-9"
             }`}
           ></span>
           <span
-            className={`my-1 h-px bg-black transition-all duration-200 ease-linear dark:bg-white ${
+            className={`my-1 h-px bg-black transition-all duration-300 ease-linear dark:bg-white ${
               navOpen ? "relative -top-2 w-8 -rotate-45" : "w-6"
             }`}
           ></span>
@@ -48,7 +48,7 @@ const Navbar = () => {
       </div>
       <div
         className={`fixed left-0 top-0 z-10 min-h-screen w-full bg-gray-300 bg-opacity-20 backdrop-blur-sm transition-all duration-500 dark:bg-black dark:bg-opacity-10 md:visible md:static md:min-h-0 md:w-auto md:translate-x-0 ${
-          navOpen ? "visible translate-x-0" : "invisible translate-x-96"
+          navOpen ? "translate-x-0" : "translate-x-[100rem]"
         }`}
       >
         <div
