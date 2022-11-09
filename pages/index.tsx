@@ -39,7 +39,7 @@ const Home = ({ projects }: { projects: projectTypes[] }) => {
               Adeoti Shuaib
             </span>
           </h1>
-          <p className="mt-3 text-sm md:text-base">
+          <p className="mt-3 text-sm md:mx-auto md:max-w-lg md:text-lg">
             A detail-oriented frontend web developer providing web solutions
             that are accessible, maintainable, and scalable.
           </p>
