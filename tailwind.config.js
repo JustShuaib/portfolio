@@ -3,6 +3,7 @@ module.exports = {
   content: [
     "./pages/**/*.{js,ts,jsx,tsx}",
     "./components/**/*.{js,ts,jsx,tsx}",
+    "./icons/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
     fontFamily: {
@@ -15,16 +16,15 @@ module.exports = {
         "off-white": "#fafafa",
         "box-bg": "#1b1b1d",
       },
-      fontFamily: {
-        "source-code": "'Source Code Pro', monospace",
-      },
       animation: {
-        typewriter: "typing 3.5s steps(30, end)",
+        "slide-in": "slide-in 0.7s ease-in-out",
       },
       keyframes: {
-        typing: {
-          from: { width: 0 },
-          to: { width: "100%", borderRight: "none" },
+        "slide-in": {
+          from: { transform: "translateX(100rem)" },
+          to: {
+            transform: "translateX(0)",
+          },
         },
       },
     },

@@ -1,5 +1,5 @@
-import Demo from "./demo";
-import Github from "./github";
+import Demo from "../icons/demo";
+import Github from "../icons/github";
 import { projectTypes } from "../pages/index";
 
 const Projects = ({ projects }: { projects: projectTypes[] }) => {
@@ -18,7 +18,7 @@ const Projects = ({ projects }: { projects: projectTypes[] }) => {
               {name}
             </h3>
             <p className="text-sm tracking-wide">{about}</p>
-            {/* <p  className="sr-only">Technologies</p> */}
+            <p className="sr-only">Technologies</p>
             <ul className="my-3 flex flex-wrap items-center gap-3 text-xs font-semibold leading-4 tracking-wide">
               {stack.map((tech, i) => (
                 <li key={i}>{tech}</li>

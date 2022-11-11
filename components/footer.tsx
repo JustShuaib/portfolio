@@ -1,7 +1,7 @@
-import Email from "./email";
-import Github from "./github";
-import LinkedIn from "./linkedIn";
-import Twitter from "./twitter";
+import Email from "../icons/email";
+import Github from "../icons/github";
+import LinkedIn from "../icons/linkedIn";
+import Twitter from "../icons/twitter";
 
 const Footer = () => {
   return (
@@ -51,7 +51,7 @@ const Footer = () => {
         </li>
       </ul>
       <p className="mt-8 text-center text-xs">
-        &copy; {new Date().getFullYear()} Designed and Developed by JustShuaib
+        &copy; JustShuaib {new Date().getFullYear()}
       </p>
     </footer>
   );

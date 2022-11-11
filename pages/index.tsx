@@ -5,8 +5,17 @@ import Navbar from "../components/navbar";
 import Projects from "../components/projects";
 import { GetStaticProps } from "next";
 import { Source_Code_Pro, Mukta } from "@next/font/google";
-const sourceCodePro = Source_Code_Pro();
-const mukta = Mukta({ weight: ["400", "500", "700"], display: "swap" });
+import Technologies from "../components/technologies";
+const sourceCodePro = Source_Code_Pro({
+  weight: ["400"],
+  subsets: ["cyrillic"],
+  display: "swap",
+});
+const mukta = Mukta({
+  weight: ["400", "500", "700"],
+  subsets: ["latin"],
+  display: "swap",
+});
 export type projectTypes = {
   id: string;
   name: string;
@@ -46,11 +55,7 @@ const Home = ({ projects }: { projects: projectTypes[] }) => {
         </header>
         <main className="px-6">
           <Projects projects={projects} />
-          <section>
-            <h2 className="text-center text-xl md:text-2xl">
-              Technologies<span className="text-royal-blue">?</span>
-            </h2>
-          </section>
+          <Technologies />
           <Contact />
         </main>
         <Footer />

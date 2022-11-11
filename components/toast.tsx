@@ -1,9 +1,10 @@
+import Tick from "../icons/tick";
+
 const Toast = () => {
   return (
-    <div>
-      <div className="fixed bottom-0 right-0 m-8">
-        <div className="pointer-events-auto overflow-hidden rounded-lg bg-white shadow-lg ring-1 ring-black ring-opacity-5 dark:bg-black"></div>
-      </div>
+    <div className="fixed right-2 top-10 z-50 animate-slide-in rounded border border-black bg-white py-2 px-3 text-sm dark:border-white dark:bg-black">
+      <Tick />
+      Message delivered successfully!
     </div>
   );
 };
