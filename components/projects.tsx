@@ -4,7 +4,7 @@ import { projectTypes } from "../pages/index";
 
 const Projects = ({ projects }: { projects: projectTypes[] }) => {
   return (
-    <section className="mt-10 mb-14">
+    <section id="projects" className="mt-10">
       <h2 className="text-center text-xl md:text-2xl">
         Projects<span className="text-royal-blue">.</span>
       </h2>

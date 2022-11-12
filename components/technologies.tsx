@@ -68,7 +68,7 @@ const techs = [
 ];
 const Technologies = () => {
   return (
-    <section>
+    <section id="technologies" className="my-14">
       <h2 className="mb-3 text-center text-xl md:text-2xl">
         Technologies<span className="text-royal-blue">?</span>
       </h2>

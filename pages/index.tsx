@@ -65,7 +65,7 @@ const Home = ({ projects }: { projects: projectTypes[] }) => {
 };
 
 export const getStaticProps: GetStaticProps = () => {
-  const res = require("projects.json");
+  const res: { projects: projectTypes[] } = require("projects.json");
   const { projects } = res;
   return {
     props: {

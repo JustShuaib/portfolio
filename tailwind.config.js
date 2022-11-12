@@ -9,23 +9,21 @@ module.exports = {
     fontFamily: {
       sans: ["Mukta", "sans-serif"],
     },
+    animation: {
+      "slide-in": "slide-in 0.7s ease-in-out",
+    },
+    keyframes: {
+      "slide-in": {
+        from: { transform: "translateX(100rem)" },
+        to: { transform: "translateX(0)" },
+      },
+    },
     extend: {
       colors: {
         "royal-blue": "#0070f3",
         "light-grey": "#eaeaea",
         "off-white": "#fafafa",
         "box-bg": "#1b1b1d",
-      },
-      animation: {
-        "slide-in": "slide-in 0.7s ease-in-out",
-      },
-      keyframes: {
-        "slide-in": {
-          from: { transform: "translateX(100rem)" },
-          to: {
-            transform: "translateX(0)",
-          },
-        },
       },
     },
   },

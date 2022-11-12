@@ -6,16 +6,16 @@ const routes = [
     text: "Home",
   },
   {
-    to: "/about",
-    text: "About",
-  },
-  {
-    to: "/projects",
+    to: "#projects",
     text: "Projects",
   },
   {
-    to: "/resume",
-    text: "Resume",
+    to: "#technologies",
+    text: "Technologies",
+  },
+  {
+    to: "#contact",
+    text: "Contact",
   },
 ];
 const Navbar = () => {
@@ -31,7 +31,7 @@ const Navbar = () => {
         <button
           type="button"
           onClick={() => setNavOpen((open) => !open)}
-          aria-label="toggle side navigation menu"
+          aria-label="toggle mobile navigation menu"
           className="relative top-5 z-20 flex flex-col items-end transition-all duration-700 ease-in-out"
         >
           <span
@@ -61,6 +61,7 @@ const Navbar = () => {
               <li key={i}>
                 <Link
                   className="md:transition md:duration-500 md:hover:text-royal-blue"
+                  onClick={() => setNavOpen(false)}
                   href={to}
                 >
                   {text}
