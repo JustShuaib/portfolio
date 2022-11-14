@@ -72,7 +72,7 @@ const Technologies = () => {
       <h2 className="mb-3 text-center text-xl md:text-2xl">
         Technologies<span className="text-royal-blue">?</span>
       </h2>
-      <div className="flex flex-wrap gap-6 md:justify-center">
+      <div className="flex flex-wrap justify-center gap-6">
         {techs.map(({ Icon, title }, index) => (
           <p key={index} className="flex flex-col items-center gap-y-1">
             {Icon}
